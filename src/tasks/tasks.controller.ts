@@ -50,6 +50,7 @@ export class TasksController {
     if (!task) {
       throw new NotFoundException('Task not found');
     }
+    return task;
   }
 
   @Put(':id')
@@ -58,5 +59,6 @@ export class TasksController {
     if (!task) {
       throw new NotFoundException('Task not found');
     }
+    return task;
   }
 }

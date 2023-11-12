@@ -3,13 +3,13 @@ import { IsString, IsBoolean, IsOptional } from 'class-validator';
 export class UpdateTaskDto {
   @IsString()
   @IsOptional()
-  title?: string;
+  title: string;
 
   @IsString()
   @IsOptional()
-  description?: string;
+  description: string;
 
   @IsBoolean()
   @IsOptional()
-  done?: boolean;
+  done: boolean;
 }
